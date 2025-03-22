@@ -1,0 +1,950 @@
+local HannChannel = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Fly = Instance.new("TextButton")
+local BTools = Instance.new("TextButton")
+local DupeStep1 = Instance.new("TextButton")
+local TextButton_7 = Instance.new("TextButton")
+local Hannonymous = Instance.new("TextLabel")
+local WoodFrame = Instance.new("Frame")
+local Volcano = Instance.new("TextButton")
+local CaveCrawler = Instance.new("TextButton")
+local SnowGlow = Instance.new("TextButton")
+local AutoBuy = Instance.new("TextButton")
+local Frost = Instance.new("TextButton")
+local Green = Instance.new("TextButton")
+local Gold = Instance.new("TextButton")
+local Oak = Instance.new("TextButton")
+local Cherry = Instance.new("TextButton")
+local Pine = Instance.new("TextButton")
+local Fir = Instance.new("TextButton")
+local Koa = Instance.new("TextButton")
+local Generic = Instance.new("TextButton")
+local Elm = Instance.new("TextButton")
+local Birch = Instance.new("TextButton")
+local Palm = Instance.new("TextButton")
+local Walnut = Instance.new("TextButton")
+local tpwood = Instance.new("TextButton")
+local tpmyslot = Instance.new("TextButton")
+local WoodPlayer = Instance.new("TextBox")
+local Close = Instance.new("TextButton")
+local Minimize = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+local DupeFrame = Instance.new("Frame")
+local SaveSlot = Instance.new("TextButton")
+local SlotText = Instance.new("TextLabel")
+local Slot = Instance.new("TextBox")
+local DupeMoney = Instance.new("TextButton")
+local LoadSlot = Instance.new("TextButton")
+local PlayerFrame = Instance.new("Frame")
+local PlrSpd = Instance.new("TextButton")
+local PlrRst = Instance.new("TextButton")
+local Fog = Instance.new("TextButton")
+local PlrClip = Instance.new("TextButton")
+local PlrJump = Instance.new("TextButton")
+local PlrTp = Instance.new("TextButton")
+local PlrBase = Instance.new("TextButton")
+local PlrTpTxt = Instance.new("TextBox")
+local PlrSpdTxt = Instance.new("TextBox")
+local PlrWater = Instance.new("TextButton")
+local MaxLand = Instance.new("TextButton")
+local PlayerMenu = Instance.new("TextButton")
+local WoodMenu = Instance.new("TextButton")
+local DupeMenu = Instance.new("TextButton")
+local TpMenu = Instance.new("TextButton")
+local TpFrame = Instance.new("Frame")
+local BoxedCar = Instance.new("TextButton")
+local WoodRUs = Instance.new("TextButton")
+local Furnishings = Instance.new("TextButton")
+local LogicShop = Instance.new("TextButton")
+local LandStore = Instance.new("TextButton")
+local BobsShack = Instance.new("TextButton")
+local ArtsShop = Instance.new("TextButton")
+local PowerShop = Instance.new("TextButton")
+local TpCarTextLabel = Instance.new("TextLabel")
+local WoodRUsCar = Instance.new("TextButton")
+local BoxedCarCar = Instance.new("TextButton")
+local FurnishingsCar = Instance.new("TextButton")
+local LogicShopCar = Instance.new("TextButton")
+local LandStoreCar = Instance.new("TextButton")
+local BobsShackCar = Instance.new("TextButton")
+local ArtsShopCar = Instance.new("TextButton")
+local PowerShopCar = Instance.new("TextButton")
+local GoHomeCar = Instance.new("TextButton")
+
+HannChannel.Name = "HannChannel"
+HannChannel.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = HannChannel
+Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main.Position = UDim2.new(0.132290184, 0, 0.150300607, 0)
+Main.Size = UDim2.new(0, 331, 0, 325)
+Main.Visible = false
+Main.Active = true
+Main.Selectable = true
+Main.Draggable = true
+
+
+
+WoodFrame.Name = "WoodFrame"
+WoodFrame.Parent = Main
+WoodFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WoodFrame.BackgroundTransparency = 1.000
+WoodFrame.Position = UDim2.new(0, 0, 0.243076921, 0)
+WoodFrame.Size = UDim2.new(0, 330, 0, 246)
+WoodFrame.Visible = false
+
+
+
+
+
+
+BTools.Name = "MouseButton1Down"
+BTools.Parent = DupeFrame
+BTools.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+BTools.Position = UDim2.new(0.644999981, 0, 0.745000005, 0)
+BTools.Size = UDim2.new(0, 30, 0, 50)
+BTools.Font = Enum.Font.SourceSans
+BTools.Text = "工具"
+BTools.TextColor3 = Color3.fromRGB(0, 0, 0)
+BTools.TextSize = 16.000
+BTools.MouseButton1Down:connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/Lf1ySa1m"))() 
+end)
+
+
+
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.Position = UDim2.new(0.924775183, 0, 0, 0)
+Close.Size = UDim2.new(0, 24, 0, 24)
+Close.Font = Enum.Font.Ubuntu
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 14.000
+Close.MouseButton1Down:connect(function()
+HannChannel:Destroy()
+end)
+
+Minimize.Name = "Minimize"
+Minimize.Parent = Main
+Minimize.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Minimize.Position = UDim2.new(0.839879155, 0, 0, 0)
+Minimize.Size = UDim2.new(0, 22, 0, 24)
+Minimize.Font = Enum.Font.Ubuntu
+Minimize.Text = "一"
+Minimize.TextColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.TextSize = 14.000
+Minimize.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+end)
+
+Open.Name = "Open"
+Open.Parent = HannChannel
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.Position = UDim2.new(0.839879155, 0, -0.0123076923, 0)
+Open.Size = UDim2.new(0, 54, 0, 22)
+Open.Text = "白脚本"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextSize = 14.000
+Open.MouseButton1Down:connect(function()
+Main.Visible = true
+Open.Visible = false
+end)
+
+DupeFrame.Name = "DupeFrame"
+DupeFrame.Parent = Main
+DupeFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DupeFrame.BackgroundTransparency = 1.000
+DupeFrame.Position = UDim2.new(0, 0, 0.243076921, 0)
+DupeFrame.Size = UDim2.new(0, 330, 0, 246)
+DupeFrame.Visible = false
+
+
+
+
+
+TextButton_7.MouseButton1Down:connect(function()
+local BaseC
+for i, v in pairs(game.Workspace.Properties:GetChildren()) do
+if v.Owner.Value == game.Players.LocalPlayer then
+BaseC = v.OriginSquare.CFrame + Vector3.new(0,5,0)
+end
+end
+if BaseC == nil then
+BaseC = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+end
+if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Tool", true) then
+game:GetService("Players").LocalPlayer.Character.Humanoid:UnequipTools()
+wait(0.1)
+end
+game:GetService('Players').LocalPlayer.Character.Head:Destroy()
+wait(0.2)
+game:GetService('Players').LocalPlayer.Character:Destroy()
+wait(0.9)
+for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+local A_1 = v
+local A_2 = "Drop tool"
+local A_3 = BaseC
+local Event = game:GetService("ReplicatedStorage").Interaction.ClientInteracted
+Event:FireServer(A_1, A_2, A_3)
+end
+end)
+
+
+
+DupeMenu.Name = "DupeMenu"
+DupeMenu.Parent = Main
+DupeMenu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DupeMenu.BorderColor3 = Color3.fromRGB(196, 196, 196)
+DupeMenu.BorderSizePixel = 2
+DupeMenu.Position = UDim2.new(0.498489439, 0, 0.0923076943, 0)
+DupeMenu.Size = UDim2.new(0, 80, 0, 20)
+DupeMenu.Font = Enum.Font.SciFi
+DupeMenu.Text = "复制"
+DupeMenu.TextColor3 = Color3.fromRGB(0, 0, 0)
+DupeMenu.TextSize = 16.000
+DupeMenu.MouseButton1Down:connect(function()
+DupeFrame.Visible = true
+PlayerFrame.Visible = false
+WoodFrame.Visible = false
+TpFrame.Visible = false
+end)
+
+
+
+TpFrame.Name = "TpFrame"
+TpFrame.Parent = Main
+TpFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TpFrame.BackgroundTransparency = 1.000
+TpFrame.Position = UDim2.new(0, 0, 0.190769225, 0)
+TpFrame.Size = UDim2.new(0, 330, 0, 263)
+TpFrame.Visible = false
+
+BoxedCar.Name = "BoxedCar"
+BoxedCar.Parent = TpFrame
+BoxedCar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BoxedCar.Position = UDim2.new(0.26980868, 0, 0.0492045693, 0)
+BoxedCar.Size = UDim2.new(0, 72, 0, 25)
+BoxedCar.Font = Enum.Font.FredokaOne
+BoxedCar.Text = "沼泽地"
+BoxedCar.TextColor3 = Color3.fromRGB(0, 0, 0)
+BoxedCar.TextSize = 16.000
+
+WoodRUs.Name = "WoodRUs"
+WoodRUs.Parent = TpFrame
+WoodRUs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WoodRUs.Position = UDim2.new(0.0334450454, 0, 0.0492045693, 0)
+WoodRUs.Size = UDim2.new(0, 72, 0, 25)
+WoodRUs.Font = Enum.Font.FredokaOne
+WoodRUs.Text = "出生地"
+WoodRUs.TextColor3 = Color3.fromRGB(0, 0, 0)
+WoodRUs.TextSize = 16.000
+
+Furnishings.Name = "Furnishings"
+Furnishings.Parent = TpFrame
+Furnishings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Furnishings.Position = UDim2.new(0.5092026, 0, 0.0492045693, 0)
+Furnishings.Size = UDim2.new(0, 72, 0, 25)
+Furnishings.Font = Enum.Font.FredokaOne
+Furnishings.Text = "小鸟斧头"
+Furnishings.TextColor3 = Color3.fromRGB(0, 0, 0)
+Furnishings.TextSize = 16.000
+
+LogicShop.Name = "LogicShop"
+LogicShop.Parent = TpFrame
+LogicShop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LogicShop.Position = UDim2.new(0.751626849, 0, 0.0492045693, 0)
+LogicShop.Size = UDim2.new(0, 72, 0, 25)
+LogicShop.Font = Enum.Font.FredokaOne
+LogicShop.Text = "火山小绿盒"
+LogicShop.TextColor3 = Color3.fromRGB(0, 0, 0)
+LogicShop.TextSize = 16.000
+
+LandStore.Name = "LandStore"
+LandStore.Parent = TpFrame
+LandStore.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LandStore.Position = UDim2.new(0.0334450454, 0, 0.178482145, 0)
+LandStore.Size = UDim2.new(0, 72, 0, 25)
+LandStore.Font = Enum.Font.FredokaOne
+LandStore.Text = "椰子岛"
+LandStore.TextColor3 = Color3.fromRGB(0, 0, 0)
+LandStore.TextSize = 16.000
+
+BobsShack.Name = "BobsShack"
+BobsShack.Parent = TpFrame
+BobsShack.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BobsShack.Position = UDim2.new(0.26980868, 0, 0.178482145, 0)
+BobsShack.Size = UDim2.new(0, 72, 0, 25)
+BobsShack.Font = Enum.Font.FredokaOne
+BobsShack.Text = "灯塔"
+BobsShack.TextColor3 = Color3.fromRGB(0, 0, 0)
+BobsShack.TextSize = 16.000
+
+ArtsShop.Name = "ArtsShop"
+ArtsShop.Parent = TpFrame
+ArtsShop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ArtsShop.Position = UDim2.new(0.5092026, 0, 0.178482145, 0)
+ArtsShop.Size = UDim2.new(0, 72, 0, 25)
+ArtsShop.Font = Enum.Font.FredokaOne
+ArtsShop.Text = "黄金木"
+ArtsShop.TextColor3 = Color3.fromRGB(0, 0, 0)
+ArtsShop.TextSize = 16.000
+
+PowerShop.Name = "PowerShop"
+PowerShop.Parent = TpFrame
+PowerShop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PowerShop.Position = UDim2.new(0.751626849, 0, 0.178482145, 0)
+PowerShop.Size = UDim2.new(0, 72, 0, 25)
+PowerShop.Font = Enum.Font.FredokaOne
+PowerShop.Text = "蓝木"
+PowerShop.TextColor3 = Color3.fromRGB(0, 0, 0)
+PowerShop.TextSize = 16.000
+
+TpCarTextLabel.Name = "TpCarTextLabel"
+TpCarTextLabel.Parent = TpFrame
+TpCarTextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TpCarTextLabel.BackgroundTransparency = 1.000
+TpCarTextLabel.Position = UDim2.new(0.269696981, 0, 0.326996207, 0)
+TpCarTextLabel.Size = UDim2.new(0, 151, 0, 19)
+TpCarTextLabel.Font = Enum.Font.SciFi
+TpCarTextLabel.Text = "全是汽车传送，必须坐车上才能工作"
+TpCarTextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TpCarTextLabel.TextSize = 16.000
+
+WoodRUsCar.Name = "WoodRUsCar"
+WoodRUsCar.Parent = TpFrame
+WoodRUsCar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WoodRUsCar.Position = UDim2.new(0.0273844395, 0, 0.440839529, 0)
+WoodRUsCar.Size = UDim2.new(0, 72, 0, 25)
+WoodRUsCar.Font = Enum.Font.FredokaOne
+WoodRUsCar.Text = "汽车杀人"
+WoodRUsCar.TextColor3 = Color3.fromRGB(0, 0, 0)
+WoodRUsCar.TextSize = 16.000
+
+BoxedCarCar.Name = "BoxedCarCar"
+BoxedCarCar.Parent = TpFrame
+BoxedCarCar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BoxedCarCar.Position = UDim2.new(0.26374808, 0, 0.440839529, 0)
+BoxedCarCar.Size = UDim2.new(0, 72, 0, 25)
+BoxedCarCar.Font = Enum.Font.FredokaOne
+BoxedCarCar.Text = "盒子车行"
+BoxedCarCar.TextColor3 = Color3.fromRGB(0, 0, 0)
+BoxedCarCar.TextSize = 16.000
+
+FurnishingsCar.Name = "FurnishingsCar"
+FurnishingsCar.Parent = TpFrame
+FurnishingsCar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FurnishingsCar.Position = UDim2.new(0.503141999, 0, 0.440839529, 0)
+FurnishingsCar.Size = UDim2.new(0, 72, 0, 25)
+FurnishingsCar.Font = Enum.Font.FredokaOne
+FurnishingsCar.Text = "家具店"
+FurnishingsCar.TextColor3 = Color3.fromRGB(0, 0, 0)
+FurnishingsCar.TextSize = 16.000
+
+LogicShopCar.Name = "LogicShopCar"
+LogicShopCar.Parent = TpFrame
+LogicShopCar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LogicShopCar.Position = UDim2.new(0.745566249, 0, 0.440839529, 0)
+LogicShopCar.Size = UDim2.new(0, 72, 0, 25)
+LogicShopCar.Font = Enum.Font.FredokaOne
+LogicShopCar.Text = "逻辑店"
+LogicShopCar.TextColor3 = Color3.fromRGB(0, 0, 0)
+LogicShopCar.TextSize = 16.000
+
+LandStoreCar.Name = "LandStoreCar"
+LandStoreCar.Parent = TpFrame
+LandStoreCar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LandStoreCar.Position = UDim2.new(0.0273844395, 0, 0.570117116, 0)
+LandStoreCar.Size = UDim2.new(0, 72, 0, 25)
+LandStoreCar.Font = Enum.Font.FredokaOne
+LandStoreCar.Text = "雪山"
+LandStoreCar.TextColor3 = Color3.fromRGB(0, 0, 0)
+LandStoreCar.TextSize = 16.000
+
+BobsShackCar.Name = "BobsShackCar"
+BobsShackCar.Parent = TpFrame
+BobsShackCar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BobsShackCar.Position = UDim2.new(0.26374808, 0, 0.570117116, 0)
+BobsShackCar.Size = UDim2.new(0, 72, 0, 25)
+BobsShackCar.Font = Enum.Font.FredokaOne
+BobsShackCar.Text = "鲍勃沙克"
+BobsShackCar.TextColor3 = Color3.fromRGB(0, 0, 0)
+BobsShackCar.TextSize = 16.000
+
+ArtsShopCar.Name = "ArtsShopCar"
+ArtsShopCar.Parent = TpFrame
+ArtsShopCar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ArtsShopCar.Position = UDim2.new(0.503141999, 0, 0.570117116, 0)
+ArtsShopCar.Size = UDim2.new(0, 72, 0, 25)
+ArtsShopCar.Font = Enum.Font.FredokaOne
+ArtsShopCar.Text = "艺术品商店"
+ArtsShopCar.TextColor3 = Color3.fromRGB(0, 0, 0)
+ArtsShopCar.TextSize = 16.000
+
+PowerShopCar.Name = "PowerShopCar"
+PowerShopCar.Parent = TpFrame
+PowerShopCar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PowerShopCar.Position = UDim2.new(0.745566249, 0, 0.570117116, 0)
+PowerShopCar.Size = UDim2.new(0, 72, 0, 25)
+PowerShopCar.Font = Enum.Font.FredokaOne
+PowerShopCar.Text = "建筑大师"
+PowerShopCar.TextColor3 = Color3.fromRGB(0, 0, 0)
+PowerShopCar.TextSize = 16.000
+
+GoHomeCar.Name = "GoHomeCar"
+GoHomeCar.Parent = TpFrame
+GoHomeCar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GoHomeCar.Position = UDim2.new(0.387990505, 0, 0.706999242, 0)
+GoHomeCar.Size = UDim2.new(0, 72, 0, 25)
+GoHomeCar.Font = Enum.Font.FredokaOne
+GoHomeCar.Text = "幻影木"
+GoHomeCar.TextColor3 = Color3.fromRGB(0, 0, 0)
+GoHomeCar.TextSize = 16.000
+
+
+--Dupe Step 1
+
+DupeStep1.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/jJ48V2yi", true))()
+end)
+
+PlrSpd.MouseButton1Down:connect(function()
+while true do
+    wait()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = PlrSpdTxt.Text
+end
+end)
+
+PlrRst.MouseButton1Click:connect(function()
+	       loadstring(game:HttpGet("https://pastebin.com/raw/TusQaMzu"))()
+end)
+
+Fog.MouseButton1Down:connect(function()
+game.Lighting.Changed:connect(function()
+	game.Lighting.TimeOfDay = "12:00:00"
+	game.Lighting.FogEnd = 9999
+	game.Lighting.Brightness = 2
+end)
+end)
+
+_G.noclip = false
+	game:GetService('RunService').Stepped:connect(function()
+	if noclip then
+	game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+	PlrClip.BorderColor3 = Color3.fromRGB(115, 237, 255)
+	PlrClip.BorderSizePixel = 2
+	end
+	end)
+	PlrClip.MouseButton1Down:connect(function()
+	noclip = not noclip
+	PlrClip.BorderColor3 = Color3.fromRGB(115, 237, 255)
+	PlrClip.BorderSizePixel = 0
+	end)
+	
+	local toggle = false
+	PlrJump.MouseButton1Down:connect(function()
+		toggle = not toggle
+		PlrJump.BorderColor3 = (toggle and Color3.fromRGB(115, 237, 255) or Color3.fromRGB(255,255,255))
+		PlrJump.BorderSizePixel = (toggle and 2 or 0)
+		if toggle then
+			InfiniteJumpEnabled = true
+		game:GetService("UserInputService").JumpRequest:connect(function()
+		if InfiniteJumpEnabled then
+			game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+			InfiniteJumpEnabled = true
+		end
+	end)
+	
+	else
+				InfiniteJumpEnabled = false
+	       game:GetService("UserInputService").JumpRequest:connect(function()
+		if InfiniteJumpEnabled then
+			game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+			
+		end
+	end)
+		end
+	end)
+	
+	local toggle = false
+	PlrWater.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/uUbT4S7Y"))() 
+end)
+	
+MaxLand.MouseButton1Down:Connect(function()
+for i, v in pairs(game:GetService("Workspace").Properties:GetChildren()) do
+        if v:FindFirstChild("Owner") and v.Owner.Value == game.Players.LocalPlayer then
+            base = v
+            square = v.OriginSquare
+            end
+        end
+    function makebase(pos)
+        local Event = game:GetService("ReplicatedStorage").PropertyPurchasing.ClientExpandedProperty
+        Event:FireServer(base, pos)
+        end
+    spos = square.Position
+    makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z))
+    makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z))
+    makebase(CFrame.new(spos.X, spos.Y, spos.Z + 40))
+    makebase(CFrame.new(spos.X, spos.Y, spos.Z - 40))
+    makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z + 40))
+    makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z - 40))
+    makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z + 40))
+    makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z - 40))
+    makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z))
+    makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z))
+    makebase(CFrame.new(spos.X, spos.Y, spos.Z + 80))
+    makebase(CFrame.new(spos.X, spos.Y, spos.Z - 80))
+--Corners--
+    makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z + 80))
+    makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z - 80))
+    makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z + 80))
+    makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z - 80))
+--Corners--
+    makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z + 80))
+    makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z + 80))
+    makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z + 40))
+    makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z - 40))
+    makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z + 40))
+    makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z - 40))
+    makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z - 80))
+    makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z - 80))
+ 
+end)
+
+local ME = game.Players.LocalPlayer.Character.HumanoidRootPart
+PLR = PlrTpTxt.Text
+
+PlrTp.MouseButton1Down:connect(function()
+	local tp_namedplayer = PlrTpTxt.Text
+    local tp_player = game:GetService("Players")[tp_namedplayer]
+   
+    if tp_player then
+            for i = 1,5 do
+        wait()
+        ME.CFrame = tp_player.Character.HumanoidRootPart.CFrame + Vector3.new(0, 3, 0)
+        end
+    end
+	    end)
+	
+	PlrBase.MouseButton1Down:connect(function()
+local Plr = PlrTpTxt.Text
+    for i,v in pairs(game.Workspace.Properties:GetChildren()) do
+        if v.Owner.Value == game.Players[Plr] then
+        ME.CFrame = v.OriginSquare.CFrame + Vector3.new(0,10,0)
+        end
+    end
+end)
+
+Volcano.MouseButton1Down:connect(function()
+for i, v in pairs(game.Workspace:GetChildren()) do
+	    if v.Name == "TreeRegion" then
+	        for j, k in ipairs(v:GetChildren()) do
+	            if k:FindFirstChild("TreeClass") and k.TreeClass.Value == "Volcano"  then
+	                game.Players.LocalPlayer.Character:MoveTo(k.WoodSection.Position)
+					break
+	            end
+	        end
+	    end
+	end
+end)
+
+CaveCrawler.MouseButton1Down:connect(function()
+ME.CFrame = CFrame.new(3581, -177, 430)
+end)
+
+SnowGlow.MouseButton1Down:connect(function()
+for i, v in pairs(game.Workspace:GetChildren()) do
+	    if v.Name == "TreeRegion" then
+	        for j, k in ipairs(v:GetChildren()) do
+	            if k:FindFirstChild("TreeClass") and k.TreeClass.Value == "SnowGlow"  then
+	                game.Players.LocalPlayer.Character:MoveTo(k.WoodSection.Position)
+					break
+	            end
+	        end
+	    end
+	end
+end)
+
+Frost.MouseButton1Down:connect(function()
+for i, v in pairs(game.Workspace:GetChildren()) do
+	    if v.Name == "TreeRegion" then
+	        for j, k in ipairs(v:GetChildren()) do
+	            if k:FindFirstChild("TreeClass") and k.TreeClass.Value == "Frost"  then
+	                game.Players.LocalPlayer.Character:MoveTo(k.WoodSection.Position)
+					break
+	            end
+	        end
+	    end
+	end
+end)
+
+Green.MouseButton1Down:connect(function()
+for i, v in pairs(game.Workspace:GetChildren()) do
+	    if v.Name == "TreeRegion" then
+	        for j, k in ipairs(v:GetChildren()) do
+	            if k:FindFirstChild("TreeClass") and k.TreeClass.Value == "GreenSwampy"  then
+	                game.Players.LocalPlayer.Character:MoveTo(k.WoodSection.Position)
+					break
+	            end
+	        end
+	    end
+	end
+end)
+
+Gold.MouseButton1Down:connect(function()
+for i, v in pairs(game.Workspace:GetChildren()) do
+	    if v.Name == "TreeRegion" then
+	        for j, k in ipairs(v:GetChildren()) do
+	            if k:FindFirstChild("TreeClass") and k.TreeClass.Value == "GoldSwampy"  then
+	                game.Players.LocalPlayer.Character:MoveTo(k.WoodSection.Position)
+					break
+	            end
+	        end
+	    end
+	end
+end)
+
+Oak.MouseButton1Down:connect(function()
+for i, v in pairs(game.Workspace:GetChildren()) do
+	    if v.Name == "TreeRegion" then
+	        for j, k in ipairs(v:GetChildren()) do
+	            if k:FindFirstChild("TreeClass") and k.TreeClass.Value == "Oak"  then
+	                game.Players.LocalPlayer.Character:MoveTo(k.WoodSection.Position)
+					break
+	            end
+	        end
+	    end
+	end
+end)
+
+Cherry.MouseButton1Down:connect(function()
+for i, v in pairs(game.Workspace:GetChildren()) do
+	    if v.Name == "TreeRegion" then
+	        for j, k in ipairs(v:GetChildren()) do
+	            if k:FindFirstChild("TreeClass") and k.TreeClass.Value == "Cherry"  then
+	                game.Players.LocalPlayer.Character:MoveTo(k.WoodSection.Position)
+					break
+	            end
+	        end
+	    end
+	end
+end)
+
+Pine.MouseButton1Down:connect(function()
+for i, v in pairs(game.Workspace:GetChildren()) do
+	    if v.Name == "TreeRegion" then
+	        for j, k in ipairs(v:GetChildren()) do
+	            if k:FindFirstChild("TreeClass") and k.TreeClass.Value == "Pine"  then
+	                game.Players.LocalPlayer.Character:MoveTo(k.WoodSection.Position)
+					break
+	            end
+	        end
+	    end
+	end
+end)
+
+Fir.MouseButton1Down:connect(function()
+for i, v in pairs(game.Workspace:GetChildren()) do
+	    if v.Name == "TreeRegion" then
+	        for j, k in ipairs(v:GetChildren()) do
+	            if k:FindFirstChild("TreeClass") and k.TreeClass.Value == "Fir"  then
+	                game.Players.LocalPlayer.Character:MoveTo(k.WoodSection.Position)
+					break
+	            end
+	        end
+	    end
+	end
+end)
+
+Koa.MouseButton1Down:connect(function()
+for i, v in pairs(game.Workspace:GetChildren()) do
+	    if v.Name == "TreeRegion" then
+	        for j, k in ipairs(v:GetChildren()) do
+	            if k:FindFirstChild("TreeClass") and k.TreeClass.Value == "Koa"  then
+	                game.Players.LocalPlayer.Character:MoveTo(k.WoodSection.Position)
+					break
+	            end
+	        end
+	    end
+	end
+end)
+
+Generic.MouseButton1Down:connect(function()
+for i, v in pairs(game.Workspace:GetChildren()) do
+	    if v.Name == "TreeRegion" then
+	        for j, k in ipairs(v:GetChildren()) do
+	            if k:FindFirstChild("TreeClass") and k.TreeClass.Value == "Generic"  then
+	                game.Players.LocalPlayer.Character:MoveTo(k.WoodSection.Position)
+					break
+	            end
+	        end
+	    end
+	end
+end)
+
+Elm.MouseButton1Down:connect(function()
+for i, v in pairs(game.Workspace:GetChildren()) do
+	    if v.Name == "TreeRegion" then
+	        for j, k in ipairs(v:GetChildren()) do
+	            if k:FindFirstChild("TreeClass") and k.TreeClass.Value == "Spooky"  then
+	                game.Players.LocalPlayer.Character:MoveTo(k.WoodSection.Position)
+					break
+	            end
+	        end
+	    end
+	end
+end)
+
+Birch.MouseButton1Down:connect(function()
+for i, v in pairs(game.Workspace:GetChildren()) do
+	    if v.Name == "TreeRegion" then
+	        for j, k in ipairs(v:GetChildren()) do
+	            if k:FindFirstChild("TreeClass") and k.TreeClass.Value == "Birch"  then
+	                game.Players.LocalPlayer.Character:MoveTo(k.WoodSection.Position)
+					break
+	            end
+	        end
+	    end
+	end
+end)
+
+Palm.MouseButton1Down:connect(function()
+for i, v in pairs(game.Workspace:GetChildren()) do
+	    if v.Name == "TreeRegion" then
+	        for j, k in ipairs(v:GetChildren()) do
+	            if k:FindFirstChild("TreeClass") and k.TreeClass.Value == "Palm"  then
+	                game.Players.LocalPlayer.Character:MoveTo(k.WoodSection.Position)
+					break
+	            end
+	        end
+	    end
+	end
+end)
+
+Walnut.MouseButton1Down:connect(function()
+for i, v in pairs(game.Workspace:GetChildren()) do
+	    if v.Name == "TreeRegion" then
+	        for j, k in ipairs(v:GetChildren()) do
+	            if k:FindFirstChild("TreeClass") and k.TreeClass.Value == "Walnut"  then
+	                game.Players.LocalPlayer.Character:MoveTo(k.WoodSection.Position)
+					break
+	            end
+	        end
+	    end
+	end
+end)
+
+tpwood.MouseButton1Down:connect(function()
+Ps = nil
+for i, v in pairs(game.Workspace.Properties:GetChildren()) do
+if v.Owner.Value == game.Players[WoodPlayer.Text] then
+Ps = v.OriginSquare.Position + Vector3.new(0,30,0)
+end
+end
+    for _, Log in pairs(game.Workspace.LogModels:GetChildren()) do
+        if Log.Name:sub(1, 6) == "Loose_" and Log:findFirstChild("Owner") then
+            if Log.Owner.Value == game.Players.LocalPlayer then
+                Log:MoveTo(Ps)
+                for i=1,100 do
+                    game.ReplicatedStorage.Interaction.ClientIsDragging:FireServer(Log)
+                end
+            end
+        end
+    end
+end)
+
+tpmyslot.MouseButton1Down:connect(function()
+for i,v in pairs(game.Workspace.Properties:GetChildren()) do
+		if v.Owner.Value == game.Players.LocalPlayer then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.OriginSquare.CFrame + Vector3.new(0,10,0)
+		end
+	end
+end)
+
+local MoneyCooldown = false
+local CurrentSlot = game.Players.LocalPlayer:WaitForChild("CurrentSaveSlot").Value
+local ScriptLoadOrSave = false
+local CurrentlySavingOrLoading = game.Players.LocalPlayer:WaitForChild("CurrentlySavingOrLoading")
+
+local function CheckIfSlotAvailable(Slot)
+    for a,b in pairs(game.ReplicatedStorage.LoadSaveRequests.GetMetaData:InvokeServer(game.Players.LocalPlayer)) do
+        if a == Slot then
+            for c,d in pairs(b) do
+                if c == "NumSaves" and d ~= 0 then
+                    return true
+                else
+                    return false
+                end
+            end
+        end
+    end
+end
+ 
+local function CheckSlotNumber() --Checks if the slot number is right
+    if Slot.Text == "1" or Slot.Text == "2" or Slot.Text == "3" or Slot.Text == "4" or Slot.Text == "5" or Slot.Text == "6" then
+        local SlotNumber = tonumber(Slot.Text)
+        return SlotNumber
+        else return false
+    end
+end
+ 
+local function SendNotification(Title,Text,Duration) -- Sends Notification in the bottom right of the screen
+    game.StarterGui:SetCore("SendNotification", {
+        Title = Title;
+        Text = Text;
+        Icon = nil;
+        Duration = Duration
+    })
+end
+
+SaveSlot.MouseButton1Down:connect(function()
+    local CheckSlot = CheckSlotNumber()
+    if CheckSlot ~= false then
+        if CurrentSlot ~= -1 then
+            ScriptLoadOrSave = true
+            local SaveSlot = game.ReplicatedStorage.LoadSaveRequests.RequestSave:InvokeServer(CheckSlot)
+            if SaveSlot == true then
+                SendNotification("bark 2.0", "已保存 ✅", 2)
+                wait(.5)
+                ScriptLoadOrSave = false
+            elseif SaveSlot == false then
+                SendNotification("bark 2.0", "保存成功!", 1)
+                wait(.5)
+                ScriptLoadOrSave = false
+            end
+        else
+            SendNotification("bark 2.0", "错误，你他妈会不会弄!", 1)
+        end
+    else
+        SendNotification("bark 2.0", "你他妈会不会填!", 1)
+    end
+end)
+
+LoadSlot.MouseButton1Down:connect(function()
+    ScriptLoadOrSave = true
+    local CheckSlot = CheckSlotNumber()
+    if CheckSlot ~= false then
+        if CheckIfSlotAvailable(CheckSlot) == true then
+            local LoadSlot = game.ReplicatedStorage.LoadSaveRequests.RequestLoad:InvokeServer(CheckSlot)
+            if LoadSlot == false then
+                SendNotification("bark 2.0", "他妈的现在不能加载!", 1)
+            end
+            if LoadSlot == true then
+                SendNotification("bark 2.0", "已加载!", 2)
+                CurrentSlot = CheckSlot
+            end
+        else
+            SendNotification("bark 2.0", "貌似不工作了", 2)
+        end
+    else
+        SendNotification("bark 2.0", "请你填数字☹️", 2)
+    end
+    ScriptLoadOrSave = false
+end)
+
+DupeMoney.MouseButton1Down:connect(function()
+    if MoneyCooldown == true then
+        SendNotification("bark 2.0", "忙死啊，等一下!",2)
+        return
+    elseif MoneyCooldown == false then
+        MoneyCooldown = true
+        SendNotification("bark 2.0", "复制中...", 5)
+        wait(1)
+        SendNotification("bark 2.0", "现在在脚本加载你的存档", 59)
+        game.ReplicatedStorage.Transactions.ClientToServer.Donate:InvokeServer(game.Players.LocalPlayer, game.Players.LocalPlayer.leaderstats.Money.Value, 1)
+        wait(55)
+        SendNotification("bark 2.0", "现在等待大约一分钟左右的时间，直到你的钱复制成功", 45)
+        SendNotification("bark 2.8", "复制成功，别忘了支持zhanghuihuihui", 5)
+        MoneyCooldown = false
+    end
+end)
+
+WoodRUs.MouseButton1Down:connect(function()
+TeleportCar(CFrame.new(162, 31, 56))
+end)
+
+BoxedCar.MouseButton1Down:connect(function()
+TeleportCar(CFrame.new(-964, 171, -724))
+end)
+
+Furnishings.MouseButton1Down:connect(function()
+TeleportCar(CFrame.new(4802, 27, -973))
+end)
+
+LogicShop.MouseButton1Down:connect(function()
+TeleportCar(CFrame.new(-1686, 361, 1475))
+end)
+
+LandStore.MouseButton1Down:connect(function()
+TeleportCar(CFrame.new(4379, 10, -1775))
+end)
+
+BobsShack.MouseButton1Down:connect(function()
+TeleportCar(CFrame.new(1461, 385, 3277))
+end)
+
+ArtsShop.MouseButton1Down:connect(function()
+TeleportCar(CFrame.new(-1076, 19, -927))
+end)
+
+PowerShop.MouseButton1Down:connect(function()
+TeleportCar(CFrame.new(3356, -204, 440))
+end)
+
+function TeleportCar(Pos)
+    if game.Players.LocalPlayer.Character then 
+        Character = game.Players.LocalPlayer.Character
+        if Character.Humanoid.SeatPart ~= nil then 
+            Car = Character.Humanoid.SeatPart.Parent
+            spawn(function()
+                for i=1,5 do
+                    wait()
+                    Car:SetPrimaryPartCFrame(Pos * CFrame.Angles(math.rad(Character.HumanoidRootPart.Orientation.x), math.rad(Character.HumanoidRootPart.Orientation.y), 0))
+                    game.ReplicatedStorage.Interaction.ClientRequestOwnership:FireServer(Car.Main)
+                    game.ReplicatedStorage.Interaction.ClientIsDragging:FireServer(Car.Main)
+                end
+            end)
+        end
+    end
+end
+
+WoodRUsCar.MouseButton1Down:connect(function()
+TeleportCar(CFrame.new(-1869, 269, 1179))
+end)--Don't fucking resell it 
+
+BoxedCarCar.MouseButton1Down:connect(function()
+TeleportCar(CFrame.new(509, 3.4, -1497))
+end)-- If you fucking change my old man, you're asking 
+
+FurnishingsCar.MouseButton1Down:connect(function()
+TeleportCar(CFrame.new(493, 5, -1682))
+end)--Second, it is not easy to change, I hope you cherish, and the reseller dies the whole family 
+
+LogicShopCar.MouseButton1Down:connect(function()
+TeleportCar(CFrame.new(4620, 4, -742))
+end)
+
+LandStoreCar.MouseButton1Down:connect(function()
+TeleportCar(CFrame.new(1450, 420, 3171))
+end)
+
+BobsShackCar.MouseButton1Down:connect(function()
+TeleportCar(CFrame.new(232, 9, -2533))
+end)
+
+ArtsShopCar.MouseButton1Down:connect(function()
+TeleportCar(CFrame.new(5210, -165, 736))
+end)
+
+PowerShopCar.MouseButton1Down:connect(function()
+TeleportCar(CFrame.new(1070, 17, 1140))
+end)
+
+GoHomeCar.MouseButton1Down:connect(function()
+TeleportCar(CFrame.new(-12, -211, -1344))
+end)
